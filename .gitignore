@@ -5,3 +5,4 @@ build
 dist
 local_saver
 
+var_procesor.egg-info/*
