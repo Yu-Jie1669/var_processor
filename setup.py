@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="checkpointer",
-    version="0.1.0",
+    name="var_process",
+    version="0.0.1",
     author="Yj Lin",
     author_email="yjlin2001@gmail.com",
-    description="Auto save checkpoints when you code raise some exception.",
+    description="Auto process vars in your pipeline.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/my_project",
+    url="https://github.com/Yu-Jie1669/var_process",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -18,5 +18,6 @@ setup(
     python_requires=">=3.6",
     install_requires=[
         "numpy",
+        "torch",
     ],
 )
