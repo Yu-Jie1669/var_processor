@@ -1,6 +1,10 @@
 # Var_procesor
 
-Var_procesor is a Python decorator that automatically saves specified local variables to a file when a function raises an error, facilitating post-mortem debugging.
+Var_processor is a Python library that can automatically handle common variable operations in projects.
+
+Now it supports automatic saving of specified variables when project exceptions or errors occur.
+
+The project is currently under development, so let's look forward to more wonderful things together.
 
 ## Features
 
@@ -27,12 +31,11 @@ def main():
     c = {}
 
     # Raise ZeroDivisionError
+    # Variables `a`, `b`, `c` will be automatically saved.
     d = a / 0
 
 if __name__ == "__main__":
     main()
 ```
-
-
 
 
