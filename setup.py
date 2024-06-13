@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="var_procesor",
-    version="0.0.1",
+    name="var_processor",
+    version="0.0.2",
     author="Yj Lin",
     author_email="yjlin2001@gmail.com",
     description="Var_processor is a Python library that can automatically handle common variable operations in projects.",

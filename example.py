@@ -1,7 +1,7 @@
-from functional import save_on_error
+from var_processor.functional import save_on_error, pdb_on_error
 
 
-@save_on_error(vars=["a", "b", "c"])
+@pdb_on_error()
 def main():
     a = "s"
     b = 1

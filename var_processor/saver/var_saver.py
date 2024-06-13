@@ -1,18 +1,15 @@
-from datetime import datetime
 import os
-from var_process.utils import SAVING_RULES
+from datetime import datetime
+
+from var_processor.utils import SAVING_RULES
 
 
 class VarSaver:
     def __init__(self, save_dir: str) -> None:
         """
-        Initialize the VarSaver with a path to save vars
+        Initialize the VarSaver with a path to save variables
         """
-
-        now = datetime.now()
-        time_str = now.strftime("%Y%m%d%H%M%S")
-
-        self.save_dir = os.path.join(save_dir, time_str)
+        self.save_dir = os.path.join(save_dir, datetime.now().strftime("%Y_%m%d_%H%M%S"))
         os.makedirs(self.save_dir, exist_ok=True)
 
     def save(self, local_vars: dict):

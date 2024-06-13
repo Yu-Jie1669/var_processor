@@ -3,6 +3,7 @@
 
 build
 dist
-local_saver
+save_on_error
 
-var_procesor.egg-info/*
+*.egg-info/*
+

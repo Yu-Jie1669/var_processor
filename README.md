@@ -1,4 +1,4 @@
-# Var_procesor
+# Var_processor
 
 Var_processor is a Python library that can automatically handle common variable operations in projects.
 
@@ -16,7 +16,7 @@ The project is currently under development, so let's look forward to more wonder
 
 Install using `pip`:
 
-```sh
+```shell
 pip install var_processor --index-url https://pypi.org/simple  
 ```
 
@@ -33,6 +33,28 @@ def main():
     # Raise ZeroDivisionError
     # Variables `a`, `b`, `c` will be automatically saved.
     d = a / 0
+
+if __name__ == "__main__":
+    main()
+```
+
+
+```python
+from var_processor.functional import pdb_on_error
+
+@pdb_on_error
+def main():
+    a = "s"
+    b = 1
+
+    def a():
+        a = "gg"
+        tt = 1 / 0
+
+    a()
+    b = 1 / 0
+    print("ss")
+
 
 if __name__ == "__main__":
     main()
